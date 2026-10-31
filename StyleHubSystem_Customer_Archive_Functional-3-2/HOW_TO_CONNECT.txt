@@ -1,0 +1,36 @@
+STYLEHUB - HOW TO CONNECT THE DATABASE
+======================================
+
+1. Start MySQL
+   - Open the XAMPP Control Panel and click "Start" next to MySQL.
+
+2. Import the database (first time only)
+   - Go to http://localhost/phpmyadmin
+   - Click "Import", choose the file stylehub_db.sql (included in this folder),
+     then click "Go". This creates the stylehub_db database with the tables,
+     the two branches, the admin account and the starting products.
+
+3. Open the project in NetBeans
+   - File > Open Project > choose this StyleHubSystem folder.
+   - The MySQL driver (lib/mysql-connector-j.jar) is already added to the
+     project libraries. If NetBeans shows a broken reference, right-click the
+     project > Properties > Libraries > Add JAR/Folder > pick
+     lib/mysql-connector-j.jar.
+
+4. Check the login settings (only if needed)
+   - Open src/com/mycompany/mavenproject7/Database.java
+   - At the top, USER is "root" and PASS is "" (blank), which matches the
+     XAMPP default. If your MySQL has a password, type it there.
+
+5. Run the project (F6)
+   - Sign in as admin:  username "admin", password "admin123"
+   - Or create a customer account from the login screen.
+
+WHAT IS NOW SAVED IN THE DATABASE
+=================================
+- Customer accounts (register, login, forgot password, profile, delete)
+- Products and per-branch stock (add, edit, delete, restock, transfer)
+- Shopping carts (kept even after closing the app)
+- Orders and their items, status changes, cancellations and stock returns
+
+Nothing about the design was changed - only where the data is stored.

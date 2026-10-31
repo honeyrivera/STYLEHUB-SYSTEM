@@ -1,0 +1,8 @@
+PROFILE CIRCLE UPDATE
+
+The profile photo in the Admin and Customer sidebar is now a true circular avatar.
+- Photos are cropped to a square and displayed inside a circle.
+- The photo is not stretched or distorted.
+- A thin gold circular border matches the existing StyleHub design.
+- The placeholder user icon is also displayed inside the circular avatar.
+- The existing profile-photo database feature is unchanged.

@@ -1,0 +1,40 @@
+STYLEHUB REPORT + ARCHIVE UPDATE
+================================
+
+Added admin pages:
+- Sales Report
+- Order Report
+- Archive
+
+Sales Report:
+- Date range: All Time, Today, Yesterday, This Week, This Month, Last Month, This Year, Custom Range
+- From/To date fields for Custom Range (YYYY-MM-DD)
+- Category filter
+- Keyword search for order number, customer, product, and category
+- Total Sales at the bottom-right
+- EXPORT button creates a CSV file using the currently filtered report
+- Cancelled and archived orders are excluded from sales totals
+
+Order Report:
+- Same date range controls
+- Category filter
+- Keyword search
+- Total Orders and Total Amount at the bottom-right
+- EXPORT button creates a CSV file using the currently filtered report
+
+Archive / Soft Delete:
+- Products, orders, and customer accounts are archived instead of physically deleted.
+- MySQL rows remain in the database.
+- Products/orders/customers have an is_archived flag.
+- Active pages hide archived records.
+- Archive page has Restore controls for Products, Orders, and Customers.
+- Archiving a customer also archives that customer's orders; restoring the customer restores those orders.
+- Archiving an order does NOT restore stock automatically; stock remains consistent with the order history.
+
+Database migration:
+- Database.java automatically adds is_archived columns when connecting to an existing StyleHub database, so existing data does not need to be recreated.
+- stylehub_db.sql also includes the archive columns for a fresh import.
+
+IMPORTANT:
+- The application still uses MAMP/MySQL connection settings from Database.java.
+- If your MAMP MySQL credentials differ, update USER/PASS/URL in Database.java as before.

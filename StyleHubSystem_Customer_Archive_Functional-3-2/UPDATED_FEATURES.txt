@@ -1,0 +1,41 @@
+StyleHub Clothing Sales and Ordering System - Updated Features
+
+1. ADMIN DATE FILTER
+   - Overview and Orders now have a date-range filter:
+     All Time, Today, Yesterday, This Week, This Month, Last Month, This Year.
+
+2. PROFILE PHOTO
+   - Admin and Customer have a profile icon beside their profile/name in the sidebar.
+   - Click the icon to choose an image from your Mac files.
+   - The selected photo is saved to the user's database profile.
+
+3. PRODUCT PHOTO CONSISTENCY
+   - The same product image is used in Products, Inventory, Customer Shop, Cart,
+     and Order Details.
+
+4. PRODUCT COLOR
+   - Admin can enter multiple colors separated by commas.
+   - Customer chooses a color before adding a product to the cart.
+   - Selected color is saved in Cart and Order Items.
+
+5. PRODUCT AVAILABILITY
+   - Admin can set Available or Unavailable for every product.
+   - Unavailable products cannot be added by customers.
+
+6. CUSTOMER CART / ORDERS
+   - Cart now shows product photo, color, size, quantity, price and subtotal.
+   - Order Details shows product thumbnails, selected color, size, quantity and subtotal.
+
+7. REFRESH
+   - Both Admin and Customer dashboards have a REFRESH button in the sidebar.
+   - Refresh reloads products, inventory, customers, carts and orders from MySQL.
+
+DATABASE
+   - Database.java automatically adds the new columns when connecting to an existing
+     StyleHub database.
+   - The included stylehub_db.sql also contains the new columns for a fresh database.
+
+IMPORTANT
+   - Keep mysql-connector-j.jar in the project's lib folder.
+   - The project is still configured for the same MAMP MySQL connection used by the
+     original project: localhost:8889, database stylehub_db.

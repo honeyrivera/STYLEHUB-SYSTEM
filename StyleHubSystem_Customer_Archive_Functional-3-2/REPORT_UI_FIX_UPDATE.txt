@@ -1,0 +1,15 @@
+STYLEHUB REPORT UI FIX - OCTOBER 8, 2026
+
+Fixed:
+1. Sales Report and Order Report tables now use larger 14px text and 48px rows.
+2. Columns have explicit widths so values are not cramped. Horizontal scrolling is enabled for the wide report tables.
+3. The last column is now a clickable VIEW DETAILS button.
+4. VIEW DETAILS opens the existing order-details window for the selected order.
+5. Category filtering now refreshes immediately when the category is changed.
+6. Search refreshes when SEARCH is clicked or Enter is pressed in the search field.
+7. Category SQL matching now ignores leading/trailing spaces and capitalization.
+8. Existing MySQL/MAMP connection and archive behavior are preserved.
+
+Database behavior:
+- Reports still read directly from stylehub_db.
+- Archived records remain in SQL and are excluded from active reports.

@@ -1,0 +1,35 @@
+STYLEHUB SECURITY + VALIDATION UPDATE
+
+Implemented in this version:
+
+1. PASSWORD SECURITY
+- Customer/admin passwords are stored using PBKDF2-HMAC-SHA256 with a random 16-byte salt.
+- Existing legacy plaintext accounts remain usable: after a successful login, their password is automatically upgraded to a PBKDF2 hash.
+- Password changes and registration always store a hash, never plaintext.
+- The UI no longer compares the stored password directly for current-password checks.
+
+2. DYNAMIC SQL SAFETY
+- Schema-upgrade helper now uses a strict whitelist of approved table/column definitions.
+- User-provided values continue to use PreparedStatement parameters.
+- No DELETE FROM statements were added; archive operations remain soft-delete/restore operations.
+
+3. IMAGE FILE VALIDATION
+- Profile and product images are limited to JPG/JPEG/PNG.
+- Maximum file size: 5 MB.
+- Image content is checked with ImageIO instead of trusting the filename extension.
+- Dimensions must be between 20x20 and 6000x6000 pixels.
+- Stored filenames are sanitized and product filenames include a timestamp to avoid collisions.
+
+4. FORM VALIDATION
+- Username: 3-50 characters; letters/numbers/dot/underscore/hyphen only.
+- Password: 6-128 characters.
+- Names: 1-50 characters with normal name punctuation.
+- Email: validated format and 100-character limit.
+- Product name: max 150 characters and restricted to expected text characters.
+- Product price: finite, positive, and within DECIMAL(10,2) range.
+- Product colors: max 500 characters and restricted characters.
+- Delivery address: 5-255 characters when delivery is selected.
+- Existing role, category, payment, method, and status choices remain controlled by UI selections.
+
+NOTE
+The 7-day username-change rule is intentionally NOT included, as requested.

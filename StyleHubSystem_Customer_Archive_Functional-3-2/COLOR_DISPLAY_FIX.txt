@@ -1,0 +1,18 @@
+STYLEHUB COLOR DISPLAY FIX
+
+Customer/product/inventory tables now display only the product's primary/display color (the first color saved for the product).
+
+Example:
+Database colors: White, Black, Blue, Brown
+Table display: White
+
+When the customer selects the product, the Color dropdown still contains ALL available colors:
+White
+Black
+Blue
+Brown
+
+The first/display color is selected by default.
+
+Admin product editing still allows multiple colors separated by commas.
+No database changes are required.

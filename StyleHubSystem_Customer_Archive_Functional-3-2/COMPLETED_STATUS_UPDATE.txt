@@ -1,0 +1,11 @@
+STYLEHUB UPDATE: COMPLETED ORDER STATUS
+
+The application now automatically updates the existing orders.status column at startup to allow Completed. Restart the app after replacing the project files.
+
+If you prefer to run the migration manually in MySQL, select stylehub_db and run:
+
+ALTER TABLE orders
+MODIFY status ENUM('Pending','Processing','Shipped','Delivery','Delivered','Completed','Cancelled')
+DEFAULT 'Pending';
+
+This includes both Delivery and Delivered to preserve compatibility with existing order records. Back up your database before running manual schema changes.

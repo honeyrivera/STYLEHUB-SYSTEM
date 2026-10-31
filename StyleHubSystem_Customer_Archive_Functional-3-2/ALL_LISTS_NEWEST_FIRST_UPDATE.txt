@@ -1,0 +1,14 @@
+STYLEHUB - ALL LISTS SORTING UPDATE
+
+Updated list ordering so newly added records appear first wherever the application lists records:
+- Active customer accounts: created_at DESC, user_id DESC. Customer map preserves query order so the Admin Customers screen shows newest registrations first.
+- Archived customer accounts: created_at DESC, user_id DESC.
+- Active products: created_at DESC, product_id DESC.
+- Archived products: product_id DESC.
+- Orders and archived orders: newest order IDs/dates first.
+- Customer order history: newest orders first.
+- Product reviews/feedback: newest review timestamps/IDs first.
+- Cart entries: newest cart item IDs first.
+- Wishlist entries: newest wishlist timestamps first.
+
+No database schema migration is needed for this sorting update. The project was rebuilt successfully with Ant. Runtime behavior against a live MySQL database was not tested in this environment.

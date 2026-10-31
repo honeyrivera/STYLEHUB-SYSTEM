@@ -1,0 +1,14 @@
+STYLEHUB - CUSTOMER REVIEWS & ADMIN FEEDBACK UPDATE
+
+1. Only customers can rate products.
+2. The RATE PRODUCT button is available only after the customer's order status is Delivered.
+3. Database validation now also requires the logged-in user to have role Customer and the order to be Delivered.
+4. Admin has a new sidebar page: Reviews & Feedback.
+5. Admin can see customer rating, product, customer, order number, comment preview and date.
+6. Admin can open VIEW FEEDBACK to read the complete rating/comment.
+7. Admin cannot submit ratings from the admin dashboard.
+8. The Reviews & Feedback page shows the number of reviews and average rating.
+9. Existing wishlist, orders, products, inventory, pickup ticket, GCash and customer features are preserved.
+
+No existing orders/products/customers are deleted.
+The product_reviews table is created automatically if it does not exist.

@@ -1,0 +1,23 @@
+STYLEHUB REPORT UI UPDATE
+
+Sales Report
+- KPI cards: Total Sales, Transactions, Units Sold, Average Sale
+- Large visible search bar at the top
+- Date range and category filters in a separate filter card
+- Reset button
+- Export button clearly placed above the table
+- Larger readable table with wider columns
+- View Details button in the final column
+- Bottom total sales summary
+
+Order Report
+- KPI cards: Total Orders, Order Value, Pending, Delivered
+- Large visible search bar at the top
+- Date range and category filters in a separate filter card
+- Reset button
+- Export button clearly placed above the table
+- Larger readable table with wider columns
+- View Details button in the final column
+- Bottom total order/value summary
+
+The existing MySQL connection and archive/soft-delete behavior are preserved.

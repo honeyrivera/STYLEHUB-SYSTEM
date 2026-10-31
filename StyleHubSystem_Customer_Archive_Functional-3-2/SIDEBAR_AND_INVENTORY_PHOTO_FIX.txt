@@ -1,0 +1,11 @@
+StyleHub - Final Sidebar + Inventory Photo Fix
+
+1. Profile avatar alignment
+   The circular profile icon is now aligned with the left edge of the StyleHub title (28px content inset), instead of being pushed outward by a large 105px inset.
+
+2. Inventory photos
+   The Inventory refresh no longer calls DefaultTableModel.setColumnIdentifiers(). That call rebuilds the JTable columns and removes the custom Product-photo renderer, causing values such as com.mycompany.../com.m... to appear. Inventory now keeps the renderer and displays the same product image used by Products.
+
+3. No database change is required for these two visual fixes.
+
+If NetBeans still shows the old layout, use Clean and Build before Run so stale compiled classes are removed.

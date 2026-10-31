@@ -1,0 +1,29 @@
+StyleHub Pickup Ticket Update
+
+- Pickup ticket is now centered in the dialog.
+- Ticket has a clean, receipt-like layout with prominent ticket number.
+- Order/date, customer, branch, pickup address, payment, item count, total, and status are clearly organized.
+- Print Ticket remains functional.
+- No database changes are required.
+
+Suggested next improvements for a more real clothing/e-commerce system:
+1. Product detail page: larger photo, color/size selection, stock by branch, quantity stepper.
+2. Search and filters: category, size, color, price range, availability, branch.
+3. Cart improvements: edit quantity, remove item, save-for-later, subtotal and total summary.
+4. Checkout summary: address/pickup branch, payment, item list, fees, final total, validation.
+5. Order tracking timeline: Placed -> Confirmed -> Preparing -> Ready for Pickup / Out for Delivery -> Completed.
+6. Pickup verification: ticket code plus order number and customer name; admin can mark Ready/Claimed.
+7. Delivery: address validation and clear delivery status.
+8. GCash: merchant payment screen, reference number entry, payment status; do not collect customer GCash passwords/PINs.
+9. Customer profile: profile photo, personal information, password change, order history.
+10. Favorites/wishlist for products.
+11. Product reviews/ratings after completed orders.
+12. Admin inventory: stock per branch, low-stock alerts, availability, color/size variants, transfer history.
+13. Admin orders: filter by date/status/branch/payment/method and quick status updates.
+14. Admin dashboard: sales by day/week/month, top products, branch comparison, low stock.
+15. Receipts: printable order receipt and pickup ticket.
+16. Notifications: order placed, payment confirmed, ready for pickup, delivered.
+17. Validation and safety: prevent ordering unavailable/insufficient stock; validate quantities and checkout fields.
+18. Audit log: record important admin actions for a school-project demonstration.
+19. Better empty/error states: friendly messages and retry/refresh actions.
+20. Consistent image handling: one product image source reused in Products, Inventory, Shop, Cart, Orders, and Details.

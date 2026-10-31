@@ -1,0 +1,7 @@
+PROFILE ALIGNMENT FINAL
+
+The sidebar profile avatar is now anchored to the same horizontal starting line as the StyleHub title, instead of sitting near the outer sidebar edge.
+
+The top-right refresh icon and inventory photo renderer are preserved.
+
+After opening in NetBeans: Clean and Build, then Run.

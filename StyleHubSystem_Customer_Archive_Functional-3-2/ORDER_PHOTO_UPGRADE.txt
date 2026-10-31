@@ -1,0 +1,12 @@
+STYLEHUB - ORDER PHOTO UPGRADE
+
+Updated:
+1. My Orders now has a PHOTO column using the same product photo as Products/Inventory.
+2. Admin Orders also has a PHOTO column for the first product in each order.
+3. VIEW DETAILS now opens a larger clothing-store style order window.
+4. Each ordered item has a large 180x200 product photo.
+5. Order details show product name, category, color, size, quantity, price, delivery/payment, status and total.
+6. The photo uses the same saved product image/fallback image system as Products and Inventory.
+7. No database changes are required.
+
+After opening in NetBeans: Run > Clean and Build Project, then Run Project.

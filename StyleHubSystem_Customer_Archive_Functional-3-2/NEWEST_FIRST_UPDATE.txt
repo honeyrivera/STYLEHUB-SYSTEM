@@ -1,0 +1,8 @@
+STYLEHUB - NEWEST FIRST UPDATE
+
+Product and inventory listings now sort newly added products first.
+
+The database query uses products.created_at DESC, with product_id DESC as a tie-breaker.
+This means a newly added product appears at the top of the product/inventory list without changing or deleting existing records.
+
+The existing database connection, security validation, archive behavior, and UI are unchanged.

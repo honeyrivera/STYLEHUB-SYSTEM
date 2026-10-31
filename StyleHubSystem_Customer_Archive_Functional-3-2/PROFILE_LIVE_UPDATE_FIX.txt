@@ -1,0 +1,13 @@
+PROFILE PHOTO LIVE UPDATE FIX
+
+Fixed the profile photo refresh behavior.
+
+Before:
+- Replacing a photo could show the old image because Swing/AWT could reuse a cached ImageIcon for the same file path.
+- The new photo might only become visible after restarting the application.
+
+Now:
+- Profile photos are read with ImageIO every time the avatar is refreshed.
+- Selecting a new photo updates the current circular avatar immediately.
+- Rebuilding the sidebar or using the top-right refresh button reads the latest saved photo without restarting.
+- The existing MAMP/MySQL profile_photo column is unchanged.

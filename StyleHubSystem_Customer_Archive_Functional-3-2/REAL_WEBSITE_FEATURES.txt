@@ -1,0 +1,44 @@
+STYLEHUB - REAL WEBSITE UPGRADE
+================================
+
+This build keeps the existing StyleHub design and database and adds a more complete clothing-store workflow.
+
+CUSTOMER
+- Product detail window with large product photo
+- Double-click a product to open details
+- Buy Now and Add to Cart
+- Search, category, color and price filters
+- Wishlist page with database persistence
+- Notifications page based on order status
+- Cart with product photos, color, size, quantity and totals
+- GCash payment screen with merchant information and browser hand-off
+- Pick-up branch address shown during checkout
+- Centered printable pickup ticket
+- Order details with large product photos
+- Order progress timeline
+- Product review/rating after Delivered
+- Existing profile-photo, refresh, cart, order and branch features preserved
+
+ADMIN
+- Existing dashboard and date filters preserved
+- Product/inventory photos remain synchronized
+- Product color and availability preserved
+- Order status management preserved
+- Large organized order details with photos and progress
+
+DATABASE
+- Existing stylehub_db is preserved.
+- On startup, missing wishlist and product_reviews tables are created automatically.
+- No existing products, customers, carts or orders are deleted.
+
+IMPORTANT
+- Replace GCASH_ACCOUNT_NAME and GCASH_ACCOUNT_NUMBER in StyleHubSystem.java with your actual school-project merchant details.
+- Replace PICKUP_ADDRESSES with the exact fictional/approved branch addresses provided by your teacher.
+- GCash cannot safely log into a customer's personal account or access a GCash PIN. The system opens the official GCash site and asks the customer to return and confirm payment.
+
+NETBEANS
+1. Open the project.
+2. Make sure MySQL/MAMP is running.
+3. Make sure mysql-connector-j.jar is in lib and included in Libraries.
+4. Run Clean and Build.
+5. Run the project.

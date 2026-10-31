@@ -1,0 +1,16 @@
+StyleHub - Customer Order Tracking Update
+
+Added a dedicated customer sidebar page: Track My Orders.
+
+Customers can now:
+- Open Track My Orders from the customer sidebar.
+- Select any of their own orders.
+- See the current order status: Pending, Processing, Shipped, Delivered, or Cancelled.
+- See a visual progress tracker: Order Placed -> Processing -> Shipped -> Delivered.
+- See branch, order method, payment, order items, and pickup/delivery information.
+- Open VIEW FULL ORDER for the existing detailed order screen.
+- Refresh the status so changes made by the admin are reflected from the database.
+
+Admin status changes are already saved with Database.updateOrderStatus(), so the customer's tracking page reflects the admin's latest status after refresh.
+
+Compilation verified successfully with javac.

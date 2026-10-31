@@ -1,0 +1,9 @@
+STYLEHUB COLOR-SPECIFIC PRODUCT PHOTO UPDATE
+
+1. BACK UP your database before defense.
+2. If your existing database is already created, run ADD_COLOR_IMAGES_MIGRATION.sql once in phpMyAdmin. If the column already exists, do not run it again.
+3. Open the project in NetBeans and run it.
+4. Admin > Products > Add/Edit Product: list colors separated by commas, choose the main photo, then click “Set Photo for Each Color” and select the actual image for each color.
+5. Save the product. In customer Shop > View Product, selecting a color changes the displayed product photo to the matching uploaded image. If no color-specific photo was uploaded, the main photo is used as a fallback.
+
+IMPORTANT: The system cannot magically know what a real brown garment looks like. Admin must upload the actual photo for Brown, Black, White, etc.
